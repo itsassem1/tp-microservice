@@ -13,7 +13,7 @@ public class ProductService {
 
     private final ProductRepository productRepository;
 
-    // Constructor injection (no @Autowired needed with a single constructor)
+    
     public ProductService(ProductRepository productRepository) {
         this.productRepository = productRepository;
     }
@@ -27,7 +27,7 @@ public class ProductService {
     }
 
     public Product addProduct(Product product) {
-        product.setId(null); // let MongoDB generate the id
+        product.setId(null); 
         return productRepository.save(product);
     }
 

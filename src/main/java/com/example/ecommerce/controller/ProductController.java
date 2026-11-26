@@ -17,7 +17,7 @@ import com.example.ecommerce.model.Product;
 import com.example.ecommerce.service.ProductService;
 
 @RestController
-@RequestMapping("/api/products")
+@RequestMapping("/api/v1/products")
 public class ProductController {
 
     private final ProductService productService;
